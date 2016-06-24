@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserCenterViewController">
+            <connections>
+                <outlet property="headView" destination="kir-t2-5w9" id="hmD-cE-Nfv"/>
+                <outlet property="userTable" destination="LhH-bC-kgA" id="D7I-zd-631"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-bC-kgA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fBD-eL-sav"/>
+                        <outlet property="delegate" destination="-1" id="Pex-oM-wf9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LhH-bC-kgA" secondAttribute="bottom" id="F0d-vj-ZcT"/>
+                <constraint firstAttribute="trailing" secondItem="LhH-bC-kgA" secondAttribute="trailing" id="F0h-Cc-rF0"/>
+                <constraint firstItem="LhH-bC-kgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YoO-4f-P7p"/>
+                <constraint firstItem="LhH-bC-kgA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uoK-5g-Iqd"/>
+            </constraints>
+            <point key="canvasLocation" x="151" y="960"/>
+        </view>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="kir-t2-5w9">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSC-Ua-zYH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserCenter_user_default_image" translatesAutoresizingMaskIntoConstraints="NO" id="wRu-J1-qG2">
+                            <rect key="frame" x="260" y="38" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="FXZ-wX-KXp"/>
+                                <constraint firstAttribute="width" constant="80" id="fL4-zB-1r7"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="wfp-d2-fDp"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="xP8-j9-yib"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw6-pH-8BM">
+                            <rect key="frame" x="272" y="126" width="56" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="BcY-HH-tvL"/>
+                                <constraint firstAttribute="height" constant="17" id="Htn-lp-j3u"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1960784314" green="0.58823529409999997" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVU-gt-zts">
+                            <rect key="frame" x="0.0" y="179" width="600" height="1"/>
+                            <color key="backgroundColor" white="0.75668174340000005" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="PbW-zr-Hyz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hVU-gt-zts" secondAttribute="trailing" id="0uL-4i-ozZ"/>
+                        <constraint firstItem="wRu-J1-qG2" firstAttribute="centerX" secondItem="jSC-Ua-zYH" secondAttribute="centerX" id="CS5-zD-Pkq"/>
+                        <constraint firstItem="wRu-J1-qG2" firstAttribute="top" secondItem="jSC-Ua-zYH" secondAttribute="top" constant="38" id="WWJ-Gq-zbq"/>
+                        <constraint firstAttribute="bottom" secondItem="hVU-gt-zts" secondAttribute="bottom" id="aKa-Ye-cdf"/>
+                        <constraint firstItem="Sw6-pH-8BM" firstAttribute="centerX" secondItem="jSC-Ua-zYH" secondAttribute="centerX" id="asw-VK-bm4"/>
+                        <constraint firstItem="hVU-gt-zts" firstAttribute="leading" secondItem="jSC-Ua-zYH" secondAttribute="leading" id="bec-A8-7KU"/>
+                        <constraint firstItem="Sw6-pH-8BM" firstAttribute="top" secondItem="wRu-J1-qG2" secondAttribute="bottom" constant="8" id="mpl-bh-UNp"/>
+                        <constraint firstAttribute="height" constant="180" id="xGb-FW-yof"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jSC-Ua-zYH" firstAttribute="leading" secondItem="kir-t2-5w9" secondAttribute="leading" id="87i-eR-L5v"/>
+                <constraint firstAttribute="trailing" secondItem="jSC-Ua-zYH" secondAttribute="trailing" id="MBA-Rc-Rgq"/>
+                <constraint firstItem="jSC-Ua-zYH" firstAttribute="top" secondItem="kir-t2-5w9" secondAttribute="top" id="Q3i-h2-8fL"/>
+                <constraint firstAttribute="bottom" secondItem="jSC-Ua-zYH" secondAttribute="bottom" id="wNr-uE-FD0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wNr-uE-FD0"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="151" y="287"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="UserCenter_user_default_image" width="101" height="101"/>
+    </resources>
+</document>
